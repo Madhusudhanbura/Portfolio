@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!--  Links  -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaQueries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -21,16 +24,20 @@
                     <p>logo</p>
                 </div>
 
-                <div class="nav-content flex">
-                    <a href="#projects" class="nav-links">About</a>
-                    <a href="#" class="nav-links">Skills</a>
-                    <a href="#" class="nav-links">Projects</a>
-                    <a href="#" class="nav-links">Contact</a>
+                <div class="nav-content flex" id="nav-content">
+                    <a href="/" class="nav-links">About</a>
+                    <a href="/" class="nav-links">Skills</a>
+                    <a href="#projects" class="nav-links">Projects</a>
+                    <a href="#contactUs" class="nav-links">Contact</a>
                 </div>
                 
                 <div class="nav-contact">
                     <a href="#" class="primary-btn">Contact us</a>
                 </div>
+
+                <a class="nav-toggle nav-links menu" onclick="toggleMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
             </div>
         </nav>
     </header>
@@ -53,7 +60,7 @@
 
 
         <!-- ======Tech Stack====== -->
-    <div class="stack-container flex">
+    <!-- <div class="stack-container flex">
         <div class="stack-img-container">
             <img src="./assets/html-5 (1).png" alt="">
         </div>
@@ -63,23 +70,23 @@
         <div class="stack-img-container">
             <img id="js-img" src="./assets/JavaScript-logo.png" alt="">
         </div>
-    </div>
+    </div> -->
 
         <!-- ====Projects===== -->
     <div class="projects" id="projects">
         <div class="project-container flex">
             <div class="project-thumbnail-container flex">
                 <div class="project-thumbnail">
-                    <img src="./assets/laptop-img.jpg" alt="laptop-img">
+                    <img src="./assets/amazon.png" alt="laptop-img">
                 </div>
             </div>
             <div class="project-content flex">
-                <h3>Project Title</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae labore laudantium omnis dolorum necessitatibus sapiente voluptatum illum cum rem! Laborum.</p>
-                <a href="#" class="primary-btn">Preview</a>
+                <h3>Amazon UI</h3>
+                <p>A Clone webpage of the home page of Amazon.com.</p>
+                <a href="https://madhusudhanbura.github.io/AmazonClone" target="_blank" class="primary-btn">Preview</a>
             </div>
         </div>
-        <div class="project-container flex">
+        <div class="project-container flex" id="project-container-2">
             <div class="project-content flex">
                 <h3>Project Title</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae labore laudantium omnis dolorum necessitatibus sapiente voluptatum illum cum rem! Laborum.</p>
@@ -94,20 +101,20 @@
         <div class="project-container flex">
             <div class="project-thumbnail-container flex">
                 <div class="project-thumbnail">
-                    <img src="./assets/laptop-img.jpg" alt="laptop-img">
+                    <img src="./assets/UsabilityHub.png" alt="laptop-img">
                 </div>
             </div>
             <div class="project-content flex">
-                <h3>Project Title</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae labore laudantium omnis dolorum necessitatibus sapiente voluptatum illum cum rem! Laborum.</p>
-                <a href="#" class="primary-btn">Preview</a>
+                <h3>Landing Page</h3>
+                <p>Developed a landing page which is responsive in nature you can have its view also in tablets and mobile.</p>
+                <a href="https://madhusudhanbura.github.io/UsabilityHub-frontend" target="_blank" class="primary-btn">Preview</a>
             </div>
         </div>
         
     </div>
 
         <!-- =====Contact Us===== -->
-    <div class="contact-container">
+    <div class="contact-container" id="contactUs">
         <div class="contact-heading flex">
             <h3>Send us a message!</h3>
             <p>Got a question or proposal? Go ahead</p>
@@ -124,7 +131,7 @@
                 </div>
                 <div class="description-container flex">
                     <label for="inputField">Description</label>
-                    <textarea id="description" name="description" rows="8" cols="45" placeholder="Hey I have an idea..."></textarea>
+                    <textarea id="description" name="description" rows="8" cols="40" placeholder="Hey I have an idea..."></textarea>
                 </div>
                 <a href="#" class="primary-btn" id="send-btn">Send</a>
             </div>
@@ -143,7 +150,7 @@
         <div class="footer-content flex">
             <div class="footer-left flex">
                 <img class="foot-logo" src="./assets/logo.svg" alt="Company-Logo">
-                <p>All rights reserved.</p>
+                <!-- <p>All rights reserved.</p> -->
             </div>
             <div class="footer-social-links flex">
                 <div class="footer-links">
@@ -159,5 +166,6 @@
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
