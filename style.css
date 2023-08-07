@@ -204,8 +204,21 @@ p{
 
 .project-thumbnail{
     height: 60%;
-    width: 80%;
+    width: 30%;
     /* background-color: #333; */
+}
+
+#app_view{
+    box-shadow: 0px 10px 10px #322333;
+    
+}
+
+#app_view_overlap{
+    position: relative;
+    right: 30px;
+    top: 20px;
+    color: pink;
+    box-shadow: 0px 10px 10px #322333;
 }
 
 .project-content a{

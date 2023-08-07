@@ -79,7 +79,7 @@
 
     /* projects */
     .projects{
-        /* padding-top: 30px; */
+        padding-top: 30px;
         height: 330vh;
     }
 
@@ -109,6 +109,8 @@
     #project-container-2{
         flex-direction: column-reverse ;
     }
+
+    
 
     /* contact-us */
     .contact-container{
