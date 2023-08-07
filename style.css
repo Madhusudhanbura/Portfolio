@@ -224,6 +224,14 @@ p{
    gap: 20px;
 }
 
+#app_view {
+    background-color: #333;
+}
+
+#app_view_overlap {
+    background-color: #322333;
+}
+
 /* .left{
     align-items: flex-end;
 } */
